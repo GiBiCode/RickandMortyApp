@@ -1,0 +1,75 @@
+css
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Añadir espacio entre los elementos */
+  }
+  img {
+    max-width: 200px;
+    margin: 10px; 
+  }
+
+  mat-grid-list {
+    margin: 10px;
+  }
+  
+  mat-grid-tile {
+    margin: 10px; 
+    width: 220px;
+    transition: transform 0.2s, margin 0.2s, box-shadow 0.2s; /* Añadir transiciones para margen y sombra */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Añadir sombra para resaltar */
+ 
+  }
+  mat-grid-tile:hover {
+    margin-top: 5px; /* Reducir el margen superior en hover para un efecto de elevación */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Aumentar la sombra en hover */
+  }
+  mat-grid-tile:hover img {
+    transform: scale(1.1);
+  }
+  mat-card {
+    width: 80%;
+    margin: 10px; /* Agregar margen para separar las tarjetas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  mat-card-image {
+    position:absolute;
+    width: 100%;
+    height:100%;
+    object-fit: cover; 
+    margin-bottom: 50px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 100%);
+  }
+ /*  mat-card-content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    width: 100%;
+  } */
+  mat-card-title {
+    font-size: 18px; /* Cambiar el tamaño del título */
+  margin-bottom: 5px; /* Añadir espacio inferior para separar del contenido */
+
+  }
+  mat-card-footer {
+    padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, #ffffff00, #000000); /* Gradiente suave de transparente a negro */
+  color: #fff; /* Color de texto */
+  font-weight: bold;
+  }
+/*   mat-card-footer::after {
+    content: '';
+    background: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: none;
+    opacity: 0.7;
+  } */
