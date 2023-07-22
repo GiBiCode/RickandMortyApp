@@ -1,25 +1,16 @@
- <!--  <mat-grid-list cols="4" rowHeight="200px">
-    <mat-grid-tile *ngFor="let item of characters.results">  
-      <mat-card>  
-        <img mat-card-image [src]="item.image">  
-        <mat-card-footer>
-          <h3>{{item.name}}</h3> 
-          <h3>{{item.status}} - {{item.species}}</h3> 
-        </mat-card-footer>  
-      </mat-card>  
-    </mat-grid-tile>  
-  </mat-grid-list> --> 
-  
-  <mat-card class="search-card">
-    <mat-form-field appearance="outline">
-      <mat-label>Buscar personaje por nombre</mat-label>
-      <input matInput [formControl]="searchQuery"> 
-    </mat-form-field> 
-  </mat-card>
-  <!-- <input matInput [formControl]="searchQuery">  --> 
-  <mat-grid-list cols="4" rowHeight="300px">
+<div class="title">
+  <h1>RICK AND MORTY</h1>
+</div>
+<mat-grid-list cols="4" rowHeight="300px">
     <mat-grid-tile *ngFor="let item of characters.results">
       <mat-card>
+        <!-- <mat-card-title>
+          <mat-card-title-group>
+            <mat-card-title>
+              <h2>{{item.name}}</h2>
+            </mat-card-title>
+          </mat-card-title-group>
+          </mat-card-title> -->
         <img mat-card-image [src]="item.image">
         <mat-card-footer>
            <!-- <h3>{{ item.name }}</h3>  -->
@@ -32,6 +23,8 @@
             <mat-panel-description>
               <p>Status: {{ item.status }}</p>
               <p>Species: {{ item.species }}</p>
+              <p>Gender: {{ item.gender }}</p>
+              <p>Origin: {{ item.origin.name }}</p>
             </mat-panel-description>
           </mat-expansion-panel>
         </mat-card-footer>

@@ -2,13 +2,22 @@ css
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Añadir espacio entre los elementos */
+    gap: 10px; /* Añado espacio entre elementos*/
   }
   img {
     max-width: 200px;
     margin: 10px; 
   }
-
+  .title {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+  
+  .title h1 {
+    font-size: 30px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #52dfe9; 
+  }
   mat-grid-list {
     margin: 10px;
   }
@@ -16,20 +25,20 @@ css
   mat-grid-tile {
     margin: 10px; 
     width: 220px;
-    transition: transform 0.2s, margin 0.2s, box-shadow 0.2s; /* Añadir transiciones para margen y sombra */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Añadir sombra para resaltar */
+    transition: transform 0.2s, margin 0.2s, box-shadow 0.2s; /* Transición en margen y sombra */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
  
   }
   mat-grid-tile:hover {
-    margin-top: 5px; /* Reducir el margen superior en hover para un efecto de elevación */
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Aumentar la sombra en hover */
+    margin-top: 5px; /* Efecto de elevación en el hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); 
   }
   mat-grid-tile:hover img {
     transform: scale(1.1);
   }
   mat-card {
     width: 80%;
-    margin: 10px; /* Agregar margen para separar las tarjetas */
+    margin: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   }
   
@@ -41,20 +50,14 @@ css
     margin-bottom: 50px;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 100%);
   }
- /*  mat-card-content {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0,0,0,0.5);
-    color: white;
-    width: 100%;
-  } */
+
   mat-card-title {
-    font-size: 18px; /* Cambiar el tamaño del título */
-  margin-bottom: 5px; /* Añadir espacio inferior para separar del contenido */
+    font-size: 18px; 
+    margin-bottom: 5px;
 
   }
   mat-card-footer {
-    padding: 10px;
+  padding: 10px;
   text-align: center;
   position: absolute;
   bottom: 0;
@@ -64,12 +67,6 @@ css
   color: #fff; /* Color de texto */
   font-weight: bold;
   }
-/*   mat-card-footer::after {
-    content: '';
-    background: white;
-    opacity: 0.5;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background: none;
-    opacity: 0.7;
-  } */
+  mat-panel-title h3{
+    font-weight: bold;
+  }
